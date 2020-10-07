@@ -1,0 +1,12 @@
+<html> 
+<head> 
+      <title>CSRF Implementation</title> 
+</head> 
+<body> 
+    <form action="/process" method="POST"> 
+       <input type="hidden" name="_csrf" value="<%= csrfToken %>"> 
+       <input type="text" name="myname"> 
+       <input type="submit" value="Submit"> 
+    </form> 
+</body> 
+</html> 

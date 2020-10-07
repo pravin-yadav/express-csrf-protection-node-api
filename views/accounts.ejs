@@ -1,0 +1,13 @@
+<html> 
+<head> 
+      <title>CSRF Implementation</title> 
+</head> 
+<body> 
+    <form action="/process" method="POST"> 
+        <!-- csrf token is not injected in this hidden input value to check if it throws an error 403 forbidden -->
+       <input type="hidden" name="_csrf" value=""> 
+       <input type="text" name="myname"> 
+       <input type="submit" value="Submit"> 
+    </form> 
+</body> 
+</html> 
